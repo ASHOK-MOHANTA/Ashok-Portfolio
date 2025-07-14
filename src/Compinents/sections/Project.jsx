@@ -41,7 +41,7 @@ export const Project = () => {
               </div>
               <div className="flex justify-between item-center">
                 <a
-                  href="#"
+                  href="https://github.com/ASHOK-MOHANTA/Doctor-Bookcking-And-Consultation-Application"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Projects➡
@@ -73,7 +73,7 @@ export const Project = () => {
               </div>
               <div className="flex justify-between item-center">
                 <a
-                  href="#"
+                  href="https://food-rescue-smart-food-distribution.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Projects➡
