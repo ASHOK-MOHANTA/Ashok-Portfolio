@@ -63,10 +63,10 @@ export const About = () => {
                   <strong>BSc IT</strong> – Ravenshaw University
                   <div className="text-sm text-gray-400">(2019–2022)</div>
                 </li>
-                <li>
+                {/* <li>
                   Relevant Coursework: Data Structures, Web Development, Cloud
                   Computing...
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">

@@ -14,13 +14,14 @@ export const Project = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
               <h3 className="text-xl font-bold mb-2">
-                Virtual Health Consultation and Booking System ("Medicare") :
+                Loan Application System :
               </h3>
               <p className="text-gray-400 mb-4">
-                Developed an accessible healthcare platform to streamline doctor
-                consultations, especially for individuals in remote locations.
-                "Medicare" enables users to search for and book appointments
-                with doctors, make secure payments for virtual consultations.
+                Developed a role-based loan management web application for users, managers, and admins with secure
+                authentication and access control.
+                Built a multi-step loan application form with real-time validation, document uploads, and progress tracking.Implemented manager dashboards for application review, approval/rejection, and admin controls for manager
+                onboarding.
+                Integrated Firebase for authentication, Firestore database, and real-time status updates.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {[
@@ -41,7 +42,7 @@ export const Project = () => {
               </div>
               <div className="flex justify-between item-center">
                 <a
-                  href="https://github.com/ASHOK-MOHANTA/Doctor-Bookcking-And-Consultation-Application"
+                  href="https://loan-application-system-nu.vercel.app/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Projects➡
@@ -73,7 +74,7 @@ export const Project = () => {
               </div>
               <div className="flex justify-between item-center">
                 <a
-                  href="https://food-rescue-smart-food-distribution.vercel.app/"
+                  href="https://food-rescue-smart-food-distribution.vercel.app/ "
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Projects➡
