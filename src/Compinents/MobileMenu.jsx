@@ -20,8 +20,8 @@ export const MobileMenu = ({ menuOpen, setmenuOpen }) => {
         &times;
       </button>
 
-      <a href="#Home" className="font-mono text-xl font-bold text-white mb-6">
-        Pedro<span className="text-blue-500">.tech</span>
+      <a href="#Home" className="font-mono text-xl font-bold text-blue-500 mb-6">
+        Ashok<span className="text-white">.</span>
       </a>
 
       <div className="flex flex-col items-center space-y-6">

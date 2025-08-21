@@ -79,7 +79,7 @@ export const Contact = () => {
                 rows={6}
                 required
                 value={formData.message}
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-50 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message...."
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
