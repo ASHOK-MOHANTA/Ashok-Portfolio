@@ -52,6 +52,8 @@ export const Navbar = ({ menuOpen, setmenuOpen }) => {
             <a
               href="https://drive.google.com/file/d/1zKMZ3dXJlYLDDYVBurA78IUpebpDWkOn/view?usp=sharing"
               className="text-blue-500 text-lg font-bold hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               {" "}
               Download Resume{" "}

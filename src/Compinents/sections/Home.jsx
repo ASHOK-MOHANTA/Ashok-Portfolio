@@ -13,14 +13,14 @@ export const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
             Hi , I'm Ashok Mohanta
           </h1>
-          <p className="text-gray-400 text-lg mb-8 max-w-lg ml-5">
+          <p className="text-gray-100 text-lg mb-8 max-w-lg ml-0">
             I'm a full stack developer who loves crafting clean, scalable web
             applications. My goal is to build solutions that offer both
             exceptional performance and delightful user experience.
           </p>
 
           {/* Buttons */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-5 ml-6 mt-10">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-5 ml-0 mt-10">
             <a
               href="#projects"
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
@@ -37,14 +37,17 @@ export const Home = () => {
 
             <a
               href="https://drive.google.com/file/d/1zKMZ3dXJlYLDDYVBurA78IUpebpDWkOn/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
             >
               Download Resume
             </a>
+
           </div>
 
           <div className="mt-6 ml-17">
-            
+
           </div>
         </div>
       </RevealOnScroll>
