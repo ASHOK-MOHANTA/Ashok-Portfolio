@@ -50,7 +50,7 @@ export const Navbar = ({ menuOpen, setmenuOpen }) => {
               Contact{" "}
             </a>
             <a
-              href="https://drive.google.com/file/d/1zKMZ3dXJlYLDDYVBurA78IUpebpDWkOn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki/view?usp=sharing"
               className="text-blue-500 text-lg font-bold hover:text-white transition-colors"
               target="_blank"
               rel="noopener noreferrer"
