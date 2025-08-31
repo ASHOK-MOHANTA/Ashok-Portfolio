@@ -9,7 +9,7 @@ export const Contact = () => {
     message: "",
   });
 
-  const handelSubmit = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
@@ -31,15 +31,12 @@ export const Contact = () => {
       className="min-h-screen flex items-center justify-center py-20 px-4"
     >
       <RevealOnScroll>
-        {/* ✅ Balanced fixed width container */}
         <div className="w-full max-w-xl mx-auto">
-          {/* Heading */}
           <h2 className="text-3xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             Get In Touch
           </h2>
 
-          {/* Form */}
-          <form className="space-y-6" onSubmit={handelSubmit}>
+          <form className="space-y-6" onSubmit={handleSubmit}>
             {/* Name */}
             <div>
               <input
@@ -52,7 +49,7 @@ export const Contact = () => {
                   setFormData({ ...formData, name: e.target.value })
                 }
                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-                placeholder="Name...."
+                placeholder="Name..."
               />
             </div>
 
@@ -64,11 +61,11 @@ export const Contact = () => {
                 name="email"
                 required
                 value={formData.email}
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-                placeholder="example@gmail.com"
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
                 }
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                placeholder="example@gmail.com"
               />
             </div>
 
@@ -76,14 +73,15 @@ export const Contact = () => {
             <div>
               <textarea
                 id="message"
+                name="message"
                 rows={6}
                 required
                 value={formData.message}
-                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
-                placeholder="Your Message...."
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
+                className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
+                placeholder="Your Message..."
               />
             </div>
 
