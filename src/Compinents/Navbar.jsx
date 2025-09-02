@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Profile from "../assets/Hero2.jpg"
+import Profile from "../assets/Hero2.jpg";
 export const Navbar = ({ menuOpen, setmenuOpen }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
@@ -73,19 +73,24 @@ export const Navbar = ({ menuOpen, setmenuOpen }) => {
               Resume{" "}
             </a> */}
 
-<a
-  href="https://drive.google.com/file/d/1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki/view?usp=sharing"
-  className="text-blue-500 text-lg font-bold hover:text-white transition-colors"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Resume
-</a>
-
-
-
-
-
+            <a
+              href="https://drive.google.com/file/d/1MXn48zvfHwFw3HkjvOw6XAlFZ0ydv1jh/view?usp=sharing"
+              className="text-blue-500 text-lg font-bold hover:text-white transition-colors"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => {
+                // trigger auto download in background
+                const link = document.createElement("a");
+                link.href =
+                  "https://drive.google.com/uc?export=download&id=1MXn48zvfHwFw3HkjvOw6XAlFZ0ydv1jh";
+                link.setAttribute("download", "Ashok_Resume.pdf");
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+              }}
+            >
+              Resume
+            </a>
           </div>
         </div>
       </div>
