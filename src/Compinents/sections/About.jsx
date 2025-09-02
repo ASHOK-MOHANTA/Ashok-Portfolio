@@ -60,7 +60,7 @@ export const About = () => {
                   <div className="text-sm text-gray-400">(2023–2025)</div>
                 </li>
                 <li>
-                  <strong>BSc IT</strong> – Ravenshaw University
+                  <strong>Bachelor Of Science (Information Technology Management)</strong> – Ravenshaw University
                   <div className="text-sm text-gray-400">(2019–2022)</div>
                 </li>
                 {/* <li>

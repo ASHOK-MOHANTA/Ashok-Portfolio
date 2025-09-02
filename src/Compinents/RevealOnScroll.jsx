@@ -10,7 +10,7 @@ export const RevealOnScroll = ({ children }) => {
           ref.current.classList.add("visible");
         }
       },
-      { threshold: 0.2, rootMargin: "0px 0px -50px 0px" }
+      { threshold: 0.15, rootMargin: "0px 0px -40px 0px" } // smoother trigger
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -20,7 +20,7 @@ export const RevealOnScroll = ({ children }) => {
   return (
     <div
       ref={ref}
-      className="reveal w-full max-w-full overflow-x-hidden"
+      className="reveal w-full max-w-screen-xl mx-auto px-3 sm:px-4 md:px-6 overflow-x-hidden"
     >
       {children}
     </div>

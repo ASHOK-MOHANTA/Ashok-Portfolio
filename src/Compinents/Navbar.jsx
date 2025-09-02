@@ -1,17 +1,31 @@
 import { useEffect } from "react";
-
+import Profile from "../assets/Hero2.jpg"
 export const Navbar = ({ menuOpen, setmenuOpen }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(48,48,46,0.38)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <a href="#home" className="font-mono text-xl font-bold text-white">
+          {/* <a href="#home" className="font-mono text-xl font-bold text-white">
             {" "}
-            <span className="text-blue-500 text-2xl font-extrabold">Ashok</span>.{" "}
+            <span className="text-blue-500 text-2xl font-extrabold"><b>Portfolio</b></span>{" "}
+          </a> */}
+          <a
+            href="#home"
+            className="flex items-center font-mono text-xl font-bold text-white"
+          >
+            {/* Profile / Hero Image */}
+            <img
+              src={Profile} // <-- replace with your hero/profile image path
+              alt="Profile"
+              className="w-9 h-9 rounded-full mr-2 object-cover"
+            />
+            <span className="text-blue-500 text-2xl font-extrabold">
+              <b>Portfolio</b>
+            </span>
           </a>
 
           <div
@@ -49,15 +63,29 @@ export const Navbar = ({ menuOpen, setmenuOpen }) => {
               {" "}
               Contact{" "}
             </a>
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki/view?usp=sharing"
               className="text-blue-500 text-lg font-bold hover:text-white transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >
               {" "}
-              Download Resume{" "}
-            </a>
+              Resume{" "}
+            </a> */}
+
+<a
+  href="https://drive.google.com/file/d/1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki/view?usp=sharing"
+  className="text-blue-500 text-lg font-bold hover:text-white transition-colors"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Resume
+</a>
+
+
+
+
+
           </div>
         </div>
       </div>
