@@ -1,16 +1,9 @@
-module.exports = {
+export default {
   theme: {
-    extend: {},
-  },
-  plugins: [],
-  future: {
-    hoverOnlyWhenSupported: true,
-  },
-  container: {
-    center: true,
-    padding: "1rem",
-  },
-  experimental: {
-    containerQueries: true,
+    extend: {
+      screens: {
+        xs: "400px", // iPhone-friendly breakpoint
+      },
+    },
   },
 };
