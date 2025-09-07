@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export const MobileMenu = ({ menuOpen, setmenuOpen }) => {
   return (
     <div
@@ -72,19 +70,27 @@ export const MobileMenu = ({ menuOpen, setmenuOpen }) => {
         </a>
         <a
           href="https://drive.google.com/file/d/1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki/view?usp=sharing"
-          onClick={() => setmenuOpen(false)}
+          onClick={(e) => {
+            setmenuOpen(false);
+
+            // Trigger auto-download
+            const downloadLink = document.createElement("a");
+            downloadLink.href =
+              "https://drive.google.com/uc?export=download&id=1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki"; // direct download link
+            downloadLink.setAttribute("download", "Ashok_Mohanta_Resume.pdf");
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+          }}
           className={`text-lg sm:text-2xl md:text-3xl font-semibold text-white my-2 sm:my-4 transform transition-transform duration-300
-                ${
-                  menuOpen
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-5"
-                }
-            `}
-            target="_blank"
-            rel="noopener noreferrer"
+        ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"}
+    `}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Resume
         </a>
+
         <a
           href="#contact"
           onClick={() => setmenuOpen(false)}

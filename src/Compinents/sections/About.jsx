@@ -7,7 +7,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center py-20"
+      className="min-h-screen flex items-center justify-center py-20 overflow-hidden"
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
@@ -15,13 +15,16 @@ export const About = () => {
             About Me
           </h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          {/* About Summary */}
+          <div className="rounded-xl p-8 border border-white/10 hover:-translate-y-1 transition-all overflow-hidden">
             <p className="text-gray-300 mb-6">
               Passionate developer with expertise in building scalable web
               applications and creating innovative solutions.
             </p>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+              {/* Frontend */}
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all overflow-hidden">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
                   {Frontend.map((tech, key) => (
@@ -34,7 +37,9 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
+
+              {/* Backend */}
+              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all overflow-hidden">
                 <h3 className="text-xl font-bold mb-4">Backend</h3>
                 <div className="flex flex-wrap gap-2">
                   {Backend.map((tech, key) => (
@@ -50,8 +55,9 @@ export const About = () => {
             </div>
           </div>
 
+          {/* Education & Work */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all overflow-hidden">
               <h3 className="text-xl font-bold mb-4">🎓 Education</h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
@@ -60,16 +66,16 @@ export const About = () => {
                   <div className="text-sm text-gray-400">(2023–2025)</div>
                 </li>
                 <li>
-                  <strong>Bachelor Of Science (Information Technology Management)</strong> – Ravenshaw University
+                  <strong>
+                    Bachelor Of Science (Information Technology Management)
+                  </strong>{" "}
+                  – Ravenshaw University
                   <div className="text-sm text-gray-400">(2019–2022)</div>
                 </li>
-                {/* <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
-                </li> */}
               </ul>
             </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:translate-y-1 transition-all">
+
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 transition-all overflow-hidden">
               <h3 className="text-xl font-bold mb-4">💼 Work Experience</h3>
               <div className="text-gray-300 space-y-1">
                 <p className="font-semibold">

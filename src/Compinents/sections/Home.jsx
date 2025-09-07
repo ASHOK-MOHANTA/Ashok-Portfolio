@@ -60,7 +60,7 @@
 
 
 import { RevealOnScroll } from "../RevealOnScroll";
-import Profile from "../../assets/Hero2.jpg";
+import Profile from "../../assets/AshokImg.png";
 
 export const Home = () => {
   return (

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Profile from "../assets/Hero2.jpg";
+import Profile from "../assets/navbarimg.jpg";
 export const Navbar = ({ menuOpen, setmenuOpen }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
