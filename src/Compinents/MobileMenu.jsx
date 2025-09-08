@@ -69,14 +69,14 @@ export const MobileMenu = ({ menuOpen, setmenuOpen }) => {
           Projects
         </a>
         <a
-          href="https://drive.google.com/file/d/1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki/view?usp=sharing"
+          href="https://drive.google.com/file/d/1MXn48zvfHwFw3HkjvOw6XAlFZ0ydv1jh/view?usp=sharing"
           onClick={(e) => {
             setmenuOpen(false);
 
             // Trigger auto-download
             const downloadLink = document.createElement("a");
             downloadLink.href =
-              "https://drive.google.com/uc?export=download&id=1K7DlNmBuQnj0uwmqjakMavSS_5U7qHki"; // direct download link
+              "https://drive.google.com/uc?export=download&id=1MXn48zvfHwFw3HkjvOw6XAlFZ0ydv1jh"; // direct download link
             downloadLink.setAttribute("download", "Ashok_Mohanta_Resume.pdf");
             document.body.appendChild(downloadLink);
             downloadLink.click();
